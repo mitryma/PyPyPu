@@ -19,4 +19,10 @@ except MySQLdb.Error as err:
     print("Query error: {}".format(err))
 
 print(data)
+print("\n\n\n")
+
+print(type(data))
+
+for x in data:
+    print(x['id']," ",x['name']," ",x['q']," ",type(x),"\n")
 
